@@ -9,15 +9,16 @@ using LinqToDB.Configuration;
 
 using Models;
 
+using ConnectionStringSettings = System.Configuration.ConnectionStringSettings;
+
 namespace KeLi.HelloLinq2Db.SQLite.Utils
 {
     public class DbHelper
     {
         private readonly LinqToDBConnectionOptions options;
 
-        public DbHelper()
+        public DbHelper(ConnectionStringSettings connectionSetting)
         {
-            var connectionSetting = ConfigurationManager.ConnectionStrings[Resources.Key_MyDatabase];
             var builder = new LinqToDBConnectionOptionsBuilder();
 
             builder.UseConnectionString(connectionSetting.ProviderName, connectionSetting.ConnectionString);

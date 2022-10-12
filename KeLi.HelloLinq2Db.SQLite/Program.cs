@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Configuration;
 using System.Linq;
 
+using KeLi.HelloLinq2Db.SQLite.Properties;
 using KeLi.HelloLinq2Db.SQLite.Utils;
 
 using Models;
@@ -11,7 +13,8 @@ namespace KeLi.HelloLinq2Db.SQLite
     {
         private static void Main()
         {
-            var helper = new DbHelper();
+            var setting = ConfigurationManager.ConnectionStrings[Resources.Key_MyDatabase];
+            var helper = new DbHelper(setting);
 
             // Add data.
             {
