@@ -8,7 +8,7 @@
     <ProjectGuid>{3FE884E3-A7E9-49C4-AA19-80656D8F460D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>KeLi.HelloLinq2Db.SQLite</RootNamespace>
-    <AssemblyName>KeLi.HelloLinq2Db.SQLite</AssemblyName>
+    <AssemblyName>HelloLinq2Db.SQLite</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
